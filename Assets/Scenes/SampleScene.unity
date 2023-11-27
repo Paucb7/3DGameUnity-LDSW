@@ -123,6 +123,23 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &581114081 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5931787446426053992, guid: 82103195fa1784b43adc111bbd9c0863, type: 3}
+  m_PrefabInstance: {fileID: 2067668466865361087}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &581114086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 581114081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dea472ac6b749845968a47117058b23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &638390430
 GameObject:
   m_ObjectHideFlags: 0
@@ -270,7 +287,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 638390431}
-  impulseForce: 3
+  impulseForce: 5
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -751,6 +768,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51d494045a7059842a9fce387149b3bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  topTransform: {fileID: 2920803236308230330}
+  goalTransform: {fileID: 3763059396117655615}
+  helixLevelPrefab: {fileID: 222449456551231010, guid: 82103195fa1784b43adc111bbd9c0863, type: 3}
+  allStages:
+  - {fileID: 11400000, guid: fcdbd34bb2e22a04395f34e207cbdefc, type: 2}
+  helixDistance: 0
 --- !u!1 &1391823286
 GameObject:
   m_ObjectHideFlags: 0
@@ -996,6 +1019,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HelixTop
       objectReference: {fileID: 0}
+    - target: {fileID: 453757109800480389, guid: 82103195fa1784b43adc111bbd9c0863, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3763059396922306565, guid: 82103195fa1784b43adc111bbd9c0863, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1036,14 +1063,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8446704912350279117, guid: 82103195fa1784b43adc111bbd9c0863, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5931787446426053992, guid: 82103195fa1784b43adc111bbd9c0863, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 581114086}
   m_SourcePrefab: {fileID: 100100000, guid: 82103195fa1784b43adc111bbd9c0863, type: 3}
 --- !u!4 &2920803236308230330 stripped
 Transform:
