@@ -13,6 +13,16 @@ public class BallController : MonoBehaviour
 
     private Vector3 startPosition;
 
+
+    [HideInInspector]
+    public int perfectPass;
+
+    public float superSpeed = 9;
+
+    private bool isSuperSpeedActive;
+
+    public int perfectPassCount = 4;
+
     private void Start()
     {
         startPosition = transform.position;
@@ -24,18 +34,28 @@ public class BallController : MonoBehaviour
     {
 
 
-
-
         if (ignoreNextcollision)
         {
             return;
         }
 
-        DeathPart deathPart = collision.transform.GetComponent<DeathPart>();
-        if (deathPart) 
+
+        if(isSuperSpeedActive && !collision.transform.GetComponent<GoalController>())
         {
-            GameManager.singleton.Restartlevel();
+            Destroy(collision.transform.parent.gameObject, 0.2f);
         }
+        else {
+
+            DeathPart deathPart = collision.transform.GetComponent<DeathPart>();
+            if (deathPart) 
+            {
+                GameManager.singleton.Restartlevel();
+            }
+
+        }
+
+
+        
         
 
         rb.velocity = Vector3.zero;
@@ -43,9 +63,24 @@ public class BallController : MonoBehaviour
 
         ignoreNextcollision = true;
         Invoke("AllowNextCollision", 0.2f);
+
+        perfectPass = 0;
+        isSuperSpeedActive = false;
         
 
     }
+
+    private void Update()
+    {
+        if (perfectPass >= perfectPassCount && !isSuperSpeedActive)
+        {
+            isSuperSpeedActive = true;
+
+            rb.AddForce(Vector3.down * superSpeed, ForceMode.Impulse);
+        }
+    }
+
+
 
     private void AllowNextCollision()
     {
