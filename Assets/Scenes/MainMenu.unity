@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 67578612}
   - component: {fileID: 67578614}
   - component: {fileID: 67578613}
+  - component: {fileID: 67578615}
   m_Layer: 5
   m_Name: Text (Legacy)
   m_TagString: Untagged
@@ -202,6 +203,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 67578611}
   m_CullTransparentMesh: 1
+--- !u!114 &67578615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67578611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!1 &288534911
 GameObject:
   m_ObjectHideFlags: 0
@@ -307,6 +323,7 @@ GameObject:
   - component: {fileID: 433926478}
   - component: {fileID: 433926477}
   - component: {fileID: 433926476}
+  - component: {fileID: 433926479}
   m_Layer: 5
   m_Name: ButtonExit
   m_TagString: Untagged
@@ -331,7 +348,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -362}
+  m_AnchoredPosition: {x: 0, y: -165}
   m_SizeDelta: {x: 506.466, y: 94.9623}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &433926476
@@ -428,6 +445,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 433926474}
   m_CullTransparentMesh: 1
+--- !u!114 &433926479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 433926474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!1 &458670755
 GameObject:
   m_ObjectHideFlags: 0
@@ -440,6 +472,7 @@ GameObject:
   - component: {fileID: 458670759}
   - component: {fileID: 458670758}
   - component: {fileID: 458670757}
+  - component: {fileID: 458670760}
   m_Layer: 5
   m_Name: ButtonPlay
   m_TagString: Untagged
@@ -464,7 +497,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 96}
+  m_AnchoredPosition: {x: 0, y: 57}
   m_SizeDelta: {x: 506.466, y: 94.9623}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &458670757
@@ -561,6 +594,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 458670755}
   m_CullTransparentMesh: 1
+--- !u!114 &458670760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 458670755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1043438626
 GameObject:
   m_ObjectHideFlags: 0
@@ -647,6 +695,7 @@ GameObject:
   - component: {fileID: 1158068189}
   - component: {fileID: 1158068191}
   - component: {fileID: 1158068190}
+  - component: {fileID: 1158068192}
   m_Layer: 5
   m_Name: Text (Legacy)
   m_TagString: Untagged
@@ -661,17 +710,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1158068188}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0.0758865, y: -0.013510071, z: 0.04104655, w: 0.99617964}
+  m_LocalPosition: {x: 0, y: 0, z: 8.0996}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1388226237}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -8.632, y: -1.921, z: 4.864}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 529.96765}
-  m_SizeDelta: {x: 1018.4797, y: 194.3212}
+  m_AnchoredPosition: {x: 0, y: 479.83057}
+  m_SizeDelta: {x: 1005.7772, y: 299.1535}
   m_Pivot: {x: 0.49999997, y: 0.50000006}
 --- !u!114 &1158068190
 MonoBehaviour:
@@ -706,7 +755,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Munin's Descent
+  m_Text: "Loki's \nLabyrinth"
 --- !u!222 &1158068191
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -715,6 +764,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1158068188}
   m_CullTransparentMesh: 1
+--- !u!114 &1158068192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1158068188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 7, y: -7}
+  m_UseGraphicAlpha: 0
 --- !u!1 &1388226236
 GameObject:
   m_ObjectHideFlags: 0
@@ -1006,6 +1070,7 @@ GameObject:
   - component: {fileID: 1997762055}
   - component: {fileID: 1997762057}
   - component: {fileID: 1997762056}
+  - component: {fileID: 1997762058}
   m_Layer: 5
   m_Name: Text (Legacy)
   m_TagString: Untagged
@@ -1074,6 +1139,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1997762054}
   m_CullTransparentMesh: 1
+--- !u!114 &1997762058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997762054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class BallController : MonoBehaviour
 {
@@ -23,6 +24,10 @@ public class BallController : MonoBehaviour
 
     public int perfectPassCount = 4;
 
+    public GameObject splash;
+
+    public AudioSource colissionAudio;
+
     private void Start()
     {
         startPosition = transform.position;
@@ -32,6 +37,10 @@ public class BallController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+
+        colissionAudio.Play();
+
+        AddSplash(collision);
 
 
         if (ignoreNextcollision)
@@ -81,7 +90,6 @@ public class BallController : MonoBehaviour
     }
 
 
-
     private void AllowNextCollision()
     {
         ignoreNextcollision = false;
@@ -90,6 +98,21 @@ public class BallController : MonoBehaviour
     public void ResetBall()
     {
         transform.position = startPosition;
+    }
+
+    public void AddSplash(Collision collision)
+    {
+        GameObject newSplash;
+
+        newSplash = Instantiate(splash);
+
+        newSplash.transform.SetParent(collision.transform);
+
+        newSplash.transform.position = new Vector3(this.transform.position.x, this.transform.position.y - 0.11f, this.transform.position.z);
+
+        Destroy(newSplash, 3);
+
+
     }
 
 
